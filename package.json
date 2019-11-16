@@ -1,0 +1,25 @@
+{
+  "name": "pick-random-number",
+  "version": "2.0.1",
+  "description": "Package to pick any random numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "numbers",
+    "pick"
+  ],
+  "homepage": "https://github.com/Gowtham-viswa/code-workouts/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/Gowtham-viswa/code-workouts/issues",
+    "email": "gowtham.085@gmail.com"
+  },
+  "author": "gowtham",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gowtham-viswa/code-workouts/blob/master/README.md"
+  }
+}
