@@ -67,7 +67,7 @@ git repository:
 keywords: random numbers
 author: gowtham
 license: (ISC) 
-About to write to /home/ANT.AMAZON.COM/viswg/codezen/test/pick-random-number/package.json:
+About to write to /home/viswg/codezen/test/pick-random-number/package.json:
 ```
 Once you have created, Your json file should look like this :
 ### Output
@@ -97,7 +97,7 @@ Package.json is the single and most important file as far as creating/publishing
 
 Note the main field in the package.json file, it refers to the name of the file that would be loaded when your package is required by another application, by default it points to `index.js`
 
-#Creating project codes
+# Creating project codes
 
 The project to be created is a very simple one, in fact, all the project code will be composed in a single file.
 
@@ -135,14 +135,18 @@ Your package is now ready to publish at [NPM website](https://www.npmjs.com/)
 3. Once you have created account, sign in and verify your NPM account from your email address.
 4. Open your terminal and type the `npm login` you will be prompted to enter the username , email address and password. 
 5. To check you have validated the account correctly, enter ` npm whoami` .You will see your account name in output.
-   ### Output
-    ```
+### Output
+
+ ```
     viswg@uef1b5fa2a4a85d:~/codezen/Master/pick-random-number$ npm whoami
     gowtham-viswa
-    ```
+ ```
+ 
 Publish your NPM package using command `npm publish` your terminal output should look like this :
-   ### Output
-    ```
+
+### Output
+
+```
     viswg@uef1b5fa2a4a85d:~/codezen/test/pick-random-number$ npm publish
     npm notice 
     npm notice 📦  pick-random-number@1.0.0
@@ -158,7 +162,42 @@ Publish your NPM package using command `npm publish` your terminal output should
     npm notice total files:   1                                       
     npm notice 
     + pick-random-number@1.0.0
-    ```
+ ```
   It's done. You have published your npm package.
   
   Your package is now visible in [NPM Packages](https://www.npmjs.com/search?q=pick-random-number)
+  
+# Testing the published NPM Package
+  
+  To test the package, you simply need to install and use it. You can do the following to test the `pick-random-number` [package] (https://www.npmjs.com/package/pick-random-number) and follow the below steps : 
+  
+  1. Create a test directory
+  2. Change into test directory
+  3. Download the test file from test directory and paste in current directory.
+  4. Install `pick-random-number` [package] (https://www.npmjs.com/package/pick-random-number) from npm website.
+  
+Your terminal should look like this :
+  
+```
+viswg@uef1b5fa2hja4a85d:~/codezen$ mkdir test-random
+viswg@uef1b5fa2a4a85d:~/codezen$ cd test-random/
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ npm install pick-random-number --save
+
+```
+Now run the `test.js` file in command line using below code :
+
+```
+
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ node ./test.js
+46
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ node ./test.js
+47
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ node ./test.js
+79
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ node ./test.js
+55
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ node ./test.js
+85
+viswg@uef1b5fa2a4a85d:~/codezen/test-random$ node ./test.js
+71
+```
